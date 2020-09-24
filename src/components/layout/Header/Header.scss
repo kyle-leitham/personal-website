@@ -1,0 +1,12 @@
+$HeaderBackground: #222222;
+$HeaderBorder: #000000;
+
+header {
+    flex-basis: 50px;
+    display: flex;
+    background: $HeaderBackground;
+    padding: 10px 40px 10px 40px;
+    border: 1px solid $HeaderBorder;
+    border-left: none;
+    border-right: none;
+}

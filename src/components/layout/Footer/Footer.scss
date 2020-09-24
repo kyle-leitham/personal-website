@@ -1,0 +1,9 @@
+$FooterBackground: #222222;
+
+footer {
+    flex-basis: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: $FooterBackground;
+}

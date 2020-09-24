@@ -1,12 +1,19 @@
 import React from 'react';
 
+import './App.scss';
+
+import Header from './components/layout/Header/Header';
+import MainContent from './components/layout/MainContent/MainContent';
+import Footer from './components/layout/Footer/Footer';
+
 function App() {
-  return (
-    <div>
-      <h1>Hello World!</h1>
-      <p>This is Kyle Leitham's personal website.</p>
-    </div>
-  );
+    return (
+        <div class="site">
+            <Header/>
+            <MainContent/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
