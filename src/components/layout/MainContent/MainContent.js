@@ -14,7 +14,7 @@ function MainContent() {
                 <h1 className="tag">{'<h1>'}</h1>
                 <h1 className="innerText">I'm </h1>
                 <h1 className="innerTextBold">Kyle Leitham.</h1>
-                <h1 className="tag">{'</h1>'}</h1>
+                <h1 className="tag typewriter">{'</h1>'}</h1>
             </div>
         </main>
     );

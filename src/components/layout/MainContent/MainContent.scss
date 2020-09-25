@@ -3,6 +3,7 @@ $BracketFontColor: #929292;
 $TagFontColor: #929292;
 $InnerTextFontColor: #ffffff;
 $InnerTextBoldFontColor: #0dfadc;
+$BlinkingCursorColor: #ff8a00;
 
 main {
     flex: 1;
@@ -51,6 +52,17 @@ main div h1.innerText, p.innerText {
 main div h1.innerTextBold {
     color: $InnerTextBoldFontColor;
     font-weight: bold;
+}
+
+main h1.typewriter {
+    border-right: .15em solid $BlinkingCursorColor;
+    animation: 
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: $BlinkingCursorColor; }
 }
 
 @media (max-width: 952px) {
