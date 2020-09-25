@@ -88,3 +88,13 @@ main div h1.innerTextBold {
         font-size: 40px;
     }
 }
+
+@media (max-width: 480px) {
+    main div h1.tag {
+        font-size: 25px;
+    }
+    
+    main div h1.innerText, h1.innerTextBold {
+        font-size: 25px;
+    }
+}
