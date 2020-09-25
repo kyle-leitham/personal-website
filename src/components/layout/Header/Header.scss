@@ -1,12 +1,136 @@
-$HeaderBackground: #222222;
-$HeaderBorder: #000000;
+$HeaderBackground: #252525;
+$LogoColor: #ffffff;
+$LinksFontColor: #929292;
+$LinkBackground: #2d2d2d;
+$ActiveLinkFontColor: #ffffff;
+$ActiveLinkBackground: #1e1e1e;
+$JavaScriptIconColor: #efd81d;
+$Html5IconColor: #df4a17;
+$Css3IconColor: #1f5faa;
+$JsonIconColor: #9273a3;
 
 header {
-    flex-basis: 50px;
-    display: flex;
     background: $HeaderBackground;
-    padding: 10px 40px 10px 40px;
-    border: 1px solid $HeaderBorder;
-    border-left: none;
-    border-right: none;
+    height: 40px;
+    width: 100%;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 40px;
+}
+
+nav ul li span {
+    background: $LinkBackground;
+    padding: 40px 20px;
+    margin: 0 1px;
+}
+
+nav ul li span a {
+    font-size: 15px;
+    text-decoration: none;
+    color: $LinksFontColor;
+}
+
+span.active, span:hover {
+    background: $ActiveLinkBackground;
+    cursor: pointer;
+
+    a {
+        color: $ActiveLinkFontColor;
+    }
+}
+
+nav ul li span i,label {
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+nav ul li span i.fa-js {
+    color: $JavaScriptIconColor;
+}
+
+nav ul li span i.fa-html5 {
+    color: $Html5IconColor;
+}
+
+nav ul li span i.fa-css3 {
+    color: $Css3IconColor;
+}
+
+nav ul li span label {
+    color: $JsonIconColor;
+}
+
+nav label.checkbtn {
+    font-size: 30px;
+    color: $LogoColor;
+    float: left;
+    line-height: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    nav ul li span a {
+        font-size: 13px;
+    }
+
+    nav ul li span i,label {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 858px) {
+    nav label.checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        background: $HeaderBackground;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 40px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li span {
+        background: none;
+    }
+
+    nav ul li span a {
+        font-size: 20px;
+        color: $LinksFontColor
+    }
+
+    nav ul li span i,label {
+        font-size: 18px;
+    }
+
+    span:hover, span.active {
+        background: none;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
 }

@@ -4,14 +4,12 @@ import './App.scss';
 
 import Header from './components/layout/Header/Header';
 import MainContent from './components/layout/MainContent/MainContent';
-import Footer from './components/layout/Footer/Footer';
 
 function App() {
     return (
-        <div class="site">
+        <div className="site">
             <Header/>
             <MainContent/>
-            <Footer/>
         </div>
     );
 }
