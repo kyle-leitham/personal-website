@@ -1,6 +1,90 @@
 $MainBackground: #1e1e1e;
+$BracketFontColor: #929292;
+$TagFontColor: #929292;
+$InnerTextFontColor: #ffffff;
+$InnerTextBoldFontColor: #0dfadc;
 
 main {
     flex: 1;
     background: $MainBackground;
+}
+
+
+main div.greeting {
+    margin-top: 50px;
+    text-align: center;
+}
+
+main div.name {
+    text-align: center;
+}
+
+main div h1,p {
+    display: inline;
+}
+
+main div p.tag {
+    font-size: 30px;
+    color: $TagFontColor;
+    font-weight: normal;
+}
+
+main div p.innerText {
+    font-size: 30px;
+}
+
+main div h1.tag {
+    font-size: 50px;
+    color: $TagFontColor;
+    font-weight: normal;
+}
+
+main div h1.innerText, h1.innerTextBold {
+    font-size: 60px;
+}
+
+main div h1.innerText, p.innerText {
+    color: $InnerTextFontColor;
+    font-weight: normal;
+}
+
+main div h1.innerTextBold {
+    color: $InnerTextBoldFontColor;
+    font-weight: bold;
+}
+
+@media (max-width: 952px) {
+    main div p.tag {
+        font-size: 20px;
+    }
+    
+    main div p.innerText {
+        font-size: 20px;
+    }
+    
+    main div h1.tag {
+        font-size: 40px;
+    }
+    
+    main div h1.innerText, h1.innerTextBold {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 858px) {
+    main div p.tag {
+        font-size: 20px;
+    }
+    
+    main div p.innerText {
+        font-size: 20px;
+    }
+    
+    main div h1.tag {
+        font-size: 30px;
+    }
+    
+    main div h1.innerText, h1.innerTextBold {
+        font-size: 40px;
+    }
 }
